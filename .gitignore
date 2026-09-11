@@ -1,0 +1,9 @@
+# Evaluation workspace
+prompt-craftsman-workspace/
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
