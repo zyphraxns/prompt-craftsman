@@ -1,0 +1,44 @@
+{
+  "skill_name": "prompt-craftsman",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我写一个整理课堂笔记的提示词\n\n(Note: this is a headless test run — when the skill asks clarifying questions, answer by accepting the agent's recommended option each round, then let it finish.)",
+      "expected_output": "A structured Chinese prompt for organizing school notes, delivered after a questioning interview, with a short rationale.",
+      "files": [],
+      "expectations": [
+        "The run asked clarifying questions before writing the prompt",
+        "At least one asked question included a recommended option",
+        "The questions were asked in rounds of at most 4, not all at once",
+        "The final prompt is in Chinese",
+        "The final prompt includes Task and Output Format",
+        "The delivery includes a short rationale of 3-5 bullets"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我把这个提示词改好：\"你是一个助手，帮我写周报\"\n\n(Note: this is a headless test run — when the skill asks clarifying questions, answer by accepting the agent's recommended option each round, then let it finish.)",
+      "expected_output": "A diagnosis of the weak prompt with severity levels, confirmation, then a rewritten structured prompt that fixes the identified weaknesses.",
+      "files": [],
+      "expectations": [
+        "The run produced a weakness diagnosis with severity levels before rewriting",
+        "The rewritten prompt preserves the weekly-report purpose",
+        "The rewritten prompt adds an Output Format the original lacked",
+        "The rationale explains what changed and why"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need a detailed English prompt for competitive analysis of SaaS products.\n\n(Note: this is a headless test run — when the skill asks clarifying questions, answer by accepting the agent's recommended option each round, then let it finish.)",
+      "expected_output": "A Detailed-tier English prompt covering all modules including examples and quality criteria, with a rationale.",
+      "files": [],
+      "expectations": [
+        "The run confirmed the Detailed length tier before writing",
+        "The final prompt is in English",
+        "The final prompt includes Examples and Quality Criteria",
+        "The final prompt includes an anti-example",
+        "The delivery includes a short rationale"
+      ]
+    }
+  ]
+}
